@@ -1,0 +1,12 @@
+<nav class="absolute top-0 px-5 right-0 left-0 h-[50px] flex justify-between items-center text-white bg-gray-500">
+  <h1 class="font-bold">Angular App</h1>
+
+  <span>
+    <a routerLink="/" class="mr-2" [ngClass]="{
+      'underline': router.url === '/'
+    }">Products</a>
+    <a routerLink="/about" [ngClass]="{
+      'underline': router.url === '/about'
+    }">About</a>
+  </span>
+</nav>
